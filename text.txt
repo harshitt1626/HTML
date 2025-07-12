@@ -1,0 +1,59 @@
+ <!-- <div style="display: flex; gap: 20px;" > -->
+                        <div class="col-1" style="width: 50%; ">
+                  <div style="background-color: rgb(10, 10, 77); color: white; margin-top: -22px;"> <h1 style="text-align: center;"><b>DANIEL <br>MICARDO</b></h1>
+                    <h2 style="text-align: center;margin-top: -20px;"><small>TEACHER</small></h2>
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " alt="" style="width: 200px; height: 200px; border-radius: 50%; padding: 70px; margin-top: -58px;">
+</div>
+<div>
+    <h2 style="border-bottom: 3px solid navy;">
+        <p>  
+<i class="fa-solid fa-person-rays"></i> EXPERIENCE</p></h2>
+
+
+   <h3> <b>2011-2012 King School </b></h3>
+    <p style="margin-top: -15px; "> Substitude Teacher </p>
+   <p> Taught English and Hiatory summer <br> schol classes for 3rd and 4th grade <br>
+    students who had fallen behind.</p>
+    <h3><b>2011-2012 Magnolia School</b></h3>
+    <p style="margin-top: -15px;">
+        Second Grade Teacher
+    </p>
+    <p>Providing a variety of hands-on <br>learnind experiences that included <br>the use of modern teaching <br>methods. </p>
+
+</div>
+                </div>
+                <div class="col-2"  >
+                 <div style="margin-left: 20px;"><h2> <i class="fa-solid fa-square-phone" style="margin-right: 10px;"></i> 91+ 7499983005 
+                    </h2>
+                  <h2> <i class="fa-solid fa-square-envelope" style="margin-right: 10px;"></i> mharshit1626@gmail.com </h2>
+                  <h2><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i> Boisar</h2>
+                   </div>
+                   <div style="margin-top: 102px;">
+                    <h2 style="border-bottom: 3px solid navy;">
+                      <p> <b><i class="fa-solid fa-user"style="margin-right: 10px;" ></i> PROFILE </b></p>
+                    </h2>
+                    
+                    <p>
+                        Enthusiastic and creative English <br> Teacher with 7+ year of classroom <br> teaching experiance. A dedicatated <br>teacher who is easily adaptable to <br>differnt learning styles.
+
+                    </p>
+                   </div>
+                   <div >
+                    
+                        <h2 style="border-bottom: 3px solid navy;"> <p><b>
+                            <i class="fa-solid fa-graduation-cap"></i> EDUCATION
+                        </b></p></h2>
+                        <p>University of Virginia (2011) English <br> B.A in English Literature</p>
+                        <p>South florida University (2016) English <br>M.A. in Eduction</p>
+
+                   </div>
+                   <div>
+                    <h2 style="border-bottom: 3px solid navy;">
+                        <p><b>
+                           <i class="fa-solid fa-certificate"></i> CERTIFICATE
+                        </b></p> 
+                    </h2>
+                    <p>Professional Graduate Certificate in <br> Teaching & Learning (PgCTL) <br>Diploma Education and Traning (DET)</p>
+                   </div>
+            
+                </div>

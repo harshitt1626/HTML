@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        justify-content: space-between;
+
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    .info a {
+        color: rgb(151, 154, 156);
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 16px;
+
+    }
+
+    .info i {
+        font-size: 18px;
+    }
+
+    .info a:hover {
+        background-color: grey;
+        color: black;
+    }
+
+    .search {
+        padding: 10px 16px;
+        border: none;
+        outline: none;
+
+        display: flex;
+        background: none;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+
+    }
+
+    .search:hover {
+        background-color: red;
+    }
+
+    .first-img {
+        position: relative;
+    }
+
+    .first-img img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .heading-1 {
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .heading-1 h1 {
+        color: white;
+        background-color: black;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        letter-spacing: 5px;
+
+    }
+
+    .para h1,
+    p {
+        text-align: center;
+        color: #777;
+    }
+
+    .para {
+        margin-top: 100px;
+    }
+
+    .detail {
+        font-family: " Lato", sans-serif;
+        color: #777;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .parent-container {
+        margin-top: 50px;
+        display: flex;
+        gap: 70px;
+    }
+
+    .col-1 {
+        width: 100%;
+        height: 100%;
+       
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+    }
+
+    .col-2{
+         width: 100%;
+        height: 100%;
+       
+    }
+    .info-1 {
+        text-align: left;
+        line-height: 1.8;
+        font-family: " Lato", sans-serif;
+        color: #777;
+    }
+
+    .good {
+        font-size: 20px;
+    }
+
+    .first-percent {
+        border: 1px solid black;
+        background-color: #918d8d;
+    }
+
+    .first-p {
+        width: 600px;
+        z-index: 1;
+        background-color: #090909;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .skills {
+        margin-top: 50px;
+    }
+
+    .photo {
+        display: flex;
+        padding-bottom: 50px;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .photo p.photography-para {
+        display: flex;
+        gap: 10px;
+        letter-spacing: 4px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .first-percent {
+        width: 100%;
+        height: 45px;
+        border: none;
+        background: #ccc;
+    }
+
+    .first-percent div.first-p {
+        width: 90%;
+        height: 100%;
+        background: #333;
+    }
+
+    .first-percent div.first-p p {
+        background: rgb(75, 73, 73);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color: white;
+    }
+
+    .portfolio {
+        width: 100%;
+        height: 135px;
+        background-color: #616161;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #f6f5f5;
+
+    }
+
+    .fir-nav {
+        text-align: center;
+
+    }
+
+    .portfolio p {
+        color: #eee9e9;
+        font-size: 18px;
+
+    }
+
+    .nav {
+        font-size: 25px;
+
+    }
+
+    .img-portfolio {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+
+    }
+
+    .img-por {
+        position: relative;
+    }
+
+    .por {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #f0efef;
+        letter-spacing: 8px;
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    .info-imp {
+        margin-top: 100px;
+
+    }
+
+    .info-imp h3 {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-size: 26px;
+        color: #777171;
+        font-weight: 300;
+
+    }
+
+    .four-img {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+       
+    }
+    .imgg{
+         width: 250px;
+        height: 163px;
+    }
+    .buttt{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .butt{
+       
+        appearance: none;
+        border: none;
+        background-color: #918d8d;
+        color: #090909;
+        font-size: 20px;
+        cursor: pointer;
+        
+        padding: 12px 24px !important;
+    }
+    .butt:hover{
+        background-color: #616161;
+    }
+    .immge{
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        object-fit: cover;
+        
+    }
+    .camera-img{
+        position: relative;
+    }
+    .contact{
+        position: absolute;
+         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #f0efef;
+        letter-spacing: 8px;
+        font-size: 50px;
+        font-weight: 300;
+    }
+    .feedback{
+        text-align: center;
+        margin-top: 80px;
+    }
+    .feedback h1{
+        color: #777;
+        font-weight: 300;
+    }
+    .last-con{
+        width: calc(100vw - 700px);
+        margin: 0 auto;
+        display: flex;
+        margin-top: 80px;
+    }
+    .col-first{
+        width: 30%;
+    }
+    .col-first img{
+        width: 284px;
+        height: 160px;
+    }
+    .col-second{
+        width: 70%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+       
+    }
+    .col-second p{
+        text-align: left;
+        font-size: 20px;
+    }
+    .col-second i{
+        font-size: 18px;
+    }
+    .col-second span{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        color: #777;
+    }
+    .cup i{
+        text-align: center;
+      
+    }
+    .input{
+       width: 100%;
+       display: flex;
+       gap: 10px;
+    }
+    [type="text"]{
+        padding: 10px 10px;
+        width: 50%;
+
+    }
+     [type="email"]{
+        padding: 10px 10px;
+        width: 50%;
+
+    }
+    .inn [type="text"]{
+        padding: 10px 10px;
+        width: 100%;
+
+    }
+    .butto{
+        appearance: none;
+        border: none;
+        display: flex;
+        gap: 5px;
+        padding: 10px 16px;
+        background-color: #090909;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+                
+    }
+    .butto:hover{
+        background-color: #666666;
+    }
+    .butto i{
+        text-align: center;
+        color: white;
+
+    }
+    .send{
+        width: 100%;
+        width: calc(100vw - 700px);
+        margin: 0 auto;
+       display: flex;
+       justify-content: end;
+       padding-bottom: 100px;
+   
+      
+    }
+    .mess{
+        text-align: center;
+        font-size: 16px;
+       
+    }
+    .last-part{
+        width: 100%;
+        background-color: #666666;
+        height: 300px;
+         text-align: center;
+       
+
+    }
+    .last-part:hover{
+        background-color: #090909;
+
+    }
+    .last-part button{
+        appearance: none;
+        border: none;
+        background-color: #fefbfb;
+        padding: 10px 18px;
+        margin-top: 80px;
+        font-size: 20px;
+        color: #666666;
+       
+    }
+    .last-part button:hover{
+        background-color: #666666;
+        color: #090909;
+        cursor: pointer;
+    }
+    .last-part:hover button{
+        color: #090909;
+    }
+
+     .social{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 40px;
+         }
+         .social a {
+            color:white;
+           padding: 0;
+           font-size: 30px;
+
+         }
+         .social a:hover{
+            color: #666666;
+            cursor: pointer;
+         }
+         .last {
+            width: 100%;
+            height: 100px;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -20px;
+            font-size: 20px;
+         }
+         .last-one{
+            color: white;
+         }
+         .last-one a{
+            color: white;
+         }
+         .last-one a:hover{
+            color: green;
+         }
+
+
+</style>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <div class="info">
+                    <a href="">HOME</a>
+                    <a href=""> <i class="fa-solid fa-user"></i> ABOUT</a>
+                    <a href=""> <i class="fa-solid fa-table-cells"></i> PORTFOLIO</a>
+                    <a href=""> <i class="fa-solid fa-envelope"></i> CONTACT</a>
+                </div>
+                <button class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </nav>
+        </header>
+        <div class="first-img">
+            <img src="https://www.w3schools.com/w3images/parallax1.jpg" alt="">
+
+            <span class="heading-1">
+                <h1>MY WEBSITE LOGO</h1>
+            </span>
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="para">
+            <h1>ABOUT ME</h1>
+            <br>
+            <p><i>I love photography</i></p>
+            <br>
+            <p class="detail">We have created a fictional "personal" website/blog, and our fictional character is a
+                hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="parent-container">
+            <div class="col-1">
+                <p> <i class="fa-solid fa-user"></i> My Name</p>
+                <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="">
+            </div>
+            <div class="col-2">
+                <p class="info-1">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+        </div>
+        <div class="skills">
+            <p class="good">Im really good at:</p>
+            <br>
+            <div class="photo">
+                <p class="photography-para"><i class="fa-solid fa-camera"></i> Photography</p>
+                <div class="first-percent">
+                    <div class="first-p">
+                        <p> 90%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <p class="photography-para"><i class="fa-solid fa-camera"></i> Web Design</p>
+                <div class="first-percent">
+                    <div class="first-p">
+                        <p> 85%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <p class="photography-para"><i class="fa-solid fa-camera"></i> Photosho</p>
+                <div class="first-percent">
+                    <div class="first-p">
+                        <p> 75%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="fir-nav">
+            <span class="nav">14+</span>
+            <br>
+            <p>Partners</p>
+
+        </div>
+        <div class="fir-nav">
+            <span class="nav">55+</span>
+            <br>
+            <p>Projects Done</p>
+
+        </div>
+        <div class="fir-nav">
+            <span class="nav">89+</span>
+            <br>
+            <p>Happy Clients</p>
+
+        </div>
+        <div class="fir-nav">
+            <span class="nav">150+</span>
+            <br>
+            <p> Meetings</p>
+
+        </div>
+    </div>
+    <div class="img-por"> <img class="img-portfolio" src="	https://www.w3schools.com/w3images/parallax2.jpg" alt="">
+        <h1 class="por">PORTFOLIO</h1>
+    </div>
+    <div class="main">
+        <div class="info-imp">
+            <h3>MY WORK</h3>
+            <br>
+            <p><i>Here are some of my latest lorem work ipsum tipsum.</i></p>
+
+            <p><i>Click on the images to make them bigger</i></p>
+        </div>
+        <div class="four-img">
+            <div><img class="imgg" src="https://www.w3schools.com/w3images/p1.jpg" alt=""></div>
+            <div><img class="imgg" src="https://www.w3schools.com/w3images/p2.jpg" alt=""></div>
+            <div><img class="imgg" src="https://www.w3schools.com/w3images/p3.jpg" alt=""></div>
+            <div><img class="imgg" src="https://www.w3schools.com/w3images/p4.jpg" alt=""></div>
+        </div>
+        <div class="four-img">   
+            <div>
+                 <img class="imgg"  src="	https://www.w3schools.com/w3images/p5.jpg" alt="">  </div>
+          
+            <div><img class="imgg"  src="https://www.w3schools.com/w3images/p6.jpg" alt=""></div>
+            <div><img class="imgg"  src="https://www.w3schools.com/w3images/p7.jpg" alt=""></div>
+            <div><img class="imgg"  src="	https://www.w3schools.com/w3images/p8.jpg" alt=""></div>
+
+        </div>
+       <div class="buttt"> <button class="butt">LOAD MORE</button></div>
+      
+    </div>
+    <div class="camera-img">
+        <img class="immge" src="https://www.w3schools.com/w3images/parallax3.jpg " alt="">
+        <h1 class="contact">CONTACT</h1>
+    
+    </div>
+    <div class="feedback">
+        <h1>WHERE I WORK</h1>
+        <br>
+        <p><i>I'd love your feedback!</i></p>
+    </div>
+    <div class="last-con">
+        <div class="col-first"><img src="https://www.w3schools.com/w3images/map.jpg" alt=""></div>
+        <div class="col-second">
+        <span> <i class="fa-solid fa-location-dot"></i>  <p> Chicago, US</p></span>
+        <span><i class="fa-solid fa-phone"></i> <p> Phone: +00 151515</p></span>
+         <span><i class="fa-solid fa-envelope"></i><p> Email: mail@mail.com</p></span>
+         <p class="cup">Swing by for a cup of  <i class="fa-solid fa-mug-hot"></i>, or leave me a note:</p>
+         <div class="input">
+            <input type="text" placeholder="Name">
+         <input type="email" name="" id="" placeholder="Email">
+         </div>
+         <div class="inn"><input type="text" placeholder="Message"></div>
+        
+        </div>
+    </div>
+    <div class="send"> <button class="butto"><span class="mess"><i class="fa-solid fa-paper-plane"></i></span>  SEND MESSAGE</button></div>
+    <div class="last-part">
+        <button><i class="fa-solid fa-arrow-up"></i> To the top</button>
+        <div class="social">
+    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<div class="last"> <p class="last-one">Powered by <a href="">w3.css </a></p></div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

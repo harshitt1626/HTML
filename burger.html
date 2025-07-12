@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+             overflow-x: hidden;
+
+        }
+        .header{
+        position: relative;
+        padding: 20px 16px;
+        box-shadow: 0px 0px 6px 0px;
+        
+        background-color:white ;
+        }
+
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-container .logo {
+              letter-spacing: 5px;
+              margin-left: 25px;
+              font-weight: 100;
+              font-size: 18px;
+        }
+        .page{
+            display: flex;
+            gap: 20px;
+        }
+       .page a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 5px;
+            padding: 15px 15px;
+            font-weight: 100;
+
+        } 
+       .page a:hover{
+            background-color: gray;
+            color:white;
+        }
+        .burger-img{
+            width: 100%;
+            height: auto;
+        }
+        .heading{
+            max-width: 1170px;
+            margin: 0 auto; 
+            display: flex;
+            gap:50px;
+            padding-top: 64px;
+            padding-bottom: 64px;
+    
+
+        }
+        img{
+            width: 500px;
+            height: 607px;
+        
+        }
+        .contain{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            
+        }
+        .contain h1{
+            font-weight: 400;
+            letter-spacing: 5px;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        .contain h5{
+            letter-spacing: 5px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            margin-top: 30px;
+        
+
+        }
+        .contain p{
+            font-size: 20px;
+            margin-top: -10px;
+        }
+        .color{
+            background-color: rgb(203, 198, 198);
+            padding: 4px;
+        }
+        .contain-2{
+            margin: 20px 0;
+            color: rgb(177, 169, 169);
+        }
+        .menu{
+            letter-spacing: 5px;
+            font-size: 38px;
+            font-weight: 400;
+            text-align: center;
+            margin: 10px 0;
+            margin-top: -40px;
+        }
+        .contain-3{
+            display: flex;
+            margin: 0px auto;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .Bread{
+            letter-spacing: 5px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 50px;
+            padding: 0;
+        }
+        .par-1{
+            color: #757575;
+        }
+        .heading-2{
+            letter-spacing: 5px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 50px;
+            padding: 0;
+        }
+        .par-2{
+            color: #757575;
+        }
+        .heading-3{
+            letter-spacing: 5px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 50px;
+            padding: 0;
+        }
+        .par-3{
+            color: #757575;
+        }
+        .heading-4{
+            letter-spacing: 5px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 50px;
+            padding: 0;
+        }
+        .par-4{
+            color: #757575;
+        }
+        .heading-5{
+            letter-spacing: 5px;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 50px;
+            padding: 0;
+        }
+        .par-5{
+            color: #757575;
+        }
+        .menu-img{
+            width: 660px;
+            height: 1000px;
+        }
+        .info{
+            padding-top: 64px;
+            padding-bottom: 64px;
+            width: 100%;
+            margin-left: 230px;
+           
+        }
+        .contact{
+             letter-spacing: 5px;
+            font-size: 38px;
+            font-weight: 400;
+            margin-top: 50px;
+            margin: 10px 0;
+            
+           
+        }
+        .bold{
+            font-weight: bolder;
+            color:  #607d8b ;
+            font-size: 20px;
+        }
+        
+         [type="text"]{
+             padding: 16px 16px;
+             width: calc(100vw - 500px);
+             margin-top: 10px;
+             font-size: 16px;
+             border: none;
+             border-bottom: 1px solid #ccc;
+         }
+         [type="number"]{
+            padding: 16px 16px;
+            width: calc(100vw - 500px);
+            margin-top:20px ;
+            font-size: 16px;
+            border: none;
+            border-bottom:1px solid #ccc ;
+         }
+          [type="datetime-local"]{
+            padding: 16px 16px;
+            width: calc(100vw - 500px);
+            margin-top:20px ;
+            font-size: 16px;
+            border: none;
+            border-bottom:1px solid #ccc ;
+         }
+          .message{
+            padding: 16px 16px;
+            width: calc(100vw - 500px);
+            margin-top:20px ;
+            font-size: 16px;
+            border: none;
+            border-bottom:1px solid #ccc ;
+         }
+         .button{
+            padding: 15px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: flex;
+            margin-top: 20px;
+
+         }
+         .last{
+            width: 100%;
+            background-color: aquamarine;
+            height: 100px;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+        
+
+  
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo-container">
+               <h2 class="logo">Gourmet au Catering</h2>
+            </div>
+            <div class="page">
+                <a href="">About</a>
+                <a href="">Menu</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+    </div>
+     <img class="burger-img" src="/Screenshot 2025-06-25 200543.png" alt="">
+    <div class="heading">
+       <img src="Screenshot 2025-06-25 114740.png" alt=""> 
+        <div class="contain"><h1>About Catering</h1>
+   
+    <h5>Traditional since 1889</h5>
+    <p>The Catering wad founded in blabla by Mr. Smith in lorem <br>ipsum dolor sit amet, consectetur adipiscing elit consectetur <br>adipiscing elit, sed do eiusmod tempor incididunt ut labore <br> et dolore magna aliqua. Ut enim ad minim veniam , quis <br>nostrud exwrcition ullamco laboris nisi ut aliquip ex ea <br> commodo consequat. Diuis aute iruredolor in reprehenderit <br>in volupate veliit esse cillium dolore eu fugiat nulla <br>pariatur. We only use <span class="color">seasonal</span> ingredients.</p>
+   <div class="contain-2"> <p>Excepteur sint occaecat cupidatat non proident , sunt in culpa <br>qui officia deserunt mollit anim id est laborum consectetur <br> adipiscing elit , sed do eiusmod temporincididunt ut labore et <br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br> commodo consequat.</p></div>
+     </div> </div> <hr style="width: calc(100vw - 500px); margin: 0 auto;">
+     <div class="contain-3">
+      <div>  <h1 class="menu">Our Menu</h1>
+        <h4 class="Bread">Bread Basket</h4>
+        <p class="par-1">Assortment of fresh baked fruits breads and muffins 5.50</p> <br>
+        <h4 class="heading-2">Honey Almond Granola with Fruits</h4>
+        <p class="par-2">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p> <br>
+        <h4 class="heading-3">Belgian Waffle</h4>
+        <p class="par-3">Vanillia flavored batter with malted flour 7.50</p> <br>
+        <h4 class="heading-4">Scrambled eggs</h4>
+        <p class="par-4">Sxrambled eggs, roasted red pepper and garlic, with green onion 7.50</p><br>
+        <h4 class="heading-5">Blueberry pancakes</h4>
+        <p class="par-5">With syrup, butter and lots of barries 8.50</p></div>
+        <img class="menu-img" src="/Screenshot 2025-06-25 210219.png" alt="">
+
+
+     </div><hr style="display: block; width: calc(100vw - 500px); margin: 0 auto;">
+     <div class="info">
+        <h1 class="contact">Contact</h1> <br>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to statisfy the biggest criteria of them all, both look and taste. <br>Do not hesitate to contact us.</p> 
+        <p><b class="bold">Catering Service, 42nd Living St, 43043 New York, NY</b></p> 
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <form>
+               <input type="text" placeholder="Name" required>
+        <input type="number" name="" id="" placeholder="How many people" required>
+        <input type="datetime-local" name="" id="" required>
+        <input class="message" type="text" name="" id="" placeholder="Message / special requirments" required>
+        <button type="submit" class="button">Send Message</button> 
+        </form>
+        
+     </div>
+<div class="last"> <p class="last-one">Powered by<a href="">w3.css </a></p></div>
+
+     
+   
+</body>
+</html>

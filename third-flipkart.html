@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Watch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #F1F2F4;
+        }
+
+        header {
+            position: fixed;
+            background-color: #2874F0;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .flip {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .flipkart {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .flipkart h2 {
+            margin: 0;
+            padding: 0;
+            font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+            color: white;
+
+        }
+
+        .flipkart p {
+            margin-top: -1px;
+        }
+
+        .flipkart p a {
+            color: rgb(209, 207, 207);
+            font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+
+        .flipkart p span {
+            color: rgb(255, 255, 5);
+        }
+
+        .flipkart p a:hover {
+            text-decoration: underline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+
+        }
+
+        .search i {
+            position: absolute;
+            color: #2874F0;
+            margin-left: -50px;
+            padding: 12px 20px;
+        }
+
+        [type="text"] {
+            padding: 12px 20px;
+            width: 600px;
+            outline: none;
+        }
+
+        .login button {
+            padding: 10px 50px;
+            cursor: pointer;
+            background-color: white;
+            color: blue;
+            border: none;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+
+        .more button {
+            border: none;
+            appearance: none;
+            background: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+
+        .be {
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        .topic {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: white;
+            padding-top: 80px;
+
+        }
+
+        .topic p {
+            color: black;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        .main-con {
+            width: calc(100vw - 200px);
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .col-1 {
+            width: 35%;
+            display: flex;
+            padding-bottom: 50px;
+            padding-top: 20px;
+        }
+
+        .col-2 {
+            width: 65%;
+        }
+
+        .col-2 p a,
+        i {
+            text-decoration: none;
+            color: #757070;
+        }
+
+        .first-col {
+            padding-left: 20px;
+        }
+
+        .first-col div:hover {
+            border: 1px solid #2874F0;
+        }
+
+        .second-col img {
+            object-fit: contain;
+            width: 400px;
+            height: 400px;
+        }
+
+        .cart-buy-button button {
+            appearance: none;
+            padding: 10px 20px;
+            width: 200px;
+            background-color: orange;
+            outline: none;
+            border: none;
+            margin-top: 10px;
+            color: white;
+
+
+        }
+
+        .cart-buy-button button i {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="flip">
+                <div class="flipkart">
+                    <h2><i style="color: white;">Flipkart</i></h2>
+                    <p><a href=""><i style="color: white;">Explore <span>Plus</span></i></a></p>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="login">
+                <button>Login</button>
+            </div>
+            <div class="be"><a href="">Become a Seller</a></div>
+            <div class="more">
+                <button>More</button>
+            </div>
+            <div><a href=""><i class="fa-solid fa-cart-shopping" style="color: white;"></i> Card</a></div>
+        </nav>
+    </header>
+    <div class="topic">
+        <p>Electronics</p>
+        <p>TVs & Appliances</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>Baby & Kids</p>
+        <p>Home & Furniture</p>
+        <p>Sports,Books & More</p>
+        <p>Flights</p>
+        <p>Offer Zone</p>
+        <p>Grocery</p>
+    </div>
+    <div class="main-con">
+        <div class="col-1" style="border: 1px solid black;">
+            <div class="first-col" >
+                <div><img
+                        src="https://rukminim2.flixcart.com/image/45/60/xif0q/smartwatch/j/h/7/-original-imagvpakfvggsgg5.jpeg?q=70&crop=false"
+                        alt="">
+                    </div>
+                <div><img src="https://rukminim2.flixcart.com/image/45/60/xif0q/smartwatch/h/d/a/-original-imagvpakfa8uxjh2.jpeg?q=70&crop=false" alt=""></div>
+                <div><img
+                        src="https://rukminim2.flixcart.com/image/45/60/xif0q/smartwatch/e/h/o/-original-imagvpakzstfd2wx.jpeg?q=70&crop=false" alt=""></div>
+                <div><img src="https://rukminim2.flixcart.com/image/45/60/xif0q/smartwatch/9/n/4/-original-imagvpakpcgz5f7x.jpeg?q=70&crop=false"alt=""></div>
+                <div><img src="https://rukminim2.flixcart.com/image/45/60/xif0q/smartwatch/m/v/i/-original-imagvpakkhbzmbym.jpeg?q=70&crop=false"alt="">
+                </div>
+                <div><img  src="https://rukminim2.flixcart.com/image/45/60/xif0q/smartwatch/x/c/b/-original-imagvpakeq467xnh.jpeg?q=70&crop=false"alt=""></div>
+                <div><img src="https://rukminim2.flixcart.com/image/45/60/xif0q/smartwatch/t/k/s/-original-imagvpaknrjw9hgd.jpeg?q=70&crop=false" alt=""></div>
+            </div>
+            <div class="second-col">
+                <img src="https://rukminim2.flixcart.com/image/500/400/xif0q/smartwatch/j/h/7/-original-imagvpakfvggsgg5.jpeg?q=70" alt="">
+                <div class="cart-buy-button">
+                    <button><i class="fa-solid fa-cart-shopping" style="color: white;"></i> GO TO CART</button>
+                    <button style="background-color: orangered;"> <i class="fa-solid fa-bolt-lightning"
+                            style="color: white;"></i>BUY NOW</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-2" style="margin-left: 20px;">
+            <p><a href="">Home</a> <i class="fa-solid fa-angle-right"></i>
+                <a href="">Wearable S...</a> <i class="fa-solid fa-angle-right"></i>
+                <a href="">Smart Watch...</a> <i class="fa-solid fa-angle-right"></i>
+                <a href="">Fastrack Sm...</a> <i class="fa-solid fa-angle-right"></i>
+                <a href="">Fastrack Rev...</a>
+            </p>
+            <p>
+                <b style="font-family: Inter, -apple-system, Helvetica, Arial, sans-serif; font-weight: 400;letter-spacing: 2px;">Fastrack
+                    Revoltt FS1-1.83''|BT Calling|Fast Charge|110+ Sports Mode|200+ WatchFaces|IP68 Smartwatch (Black
+                    Strap, Free Size)</b>
+                </p>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 50px; height: 30px; background-color: rgb(3, 114, 3); color: white; display: flex; align-items: center; justify-content: center;"> 4.2 <i class="fa-solid fa-star" style="color: white; font-size: 13px; padding: 2px;"></i> </div>
+                <p>3,22,981 Ratings & 20,894 Reviews</p>
+                <img src="	https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_9e47c1.png" alt="" style="width: 100px;">
+            </div>
+            <p style="color: green;">Special price</p>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <p>
+                    <b style="font-size: 20px; color: black;">₹1,499</b>
+                </p>
+                <p style="color: #757070; text-decoration:line-through;">₹3,995</p>
+                <p style="color: #1265e9;">64% Off</p>
+            </div>
+            <p>
+                + ₹9 Protect Promise Fee 
+                <a href="" style="color: #1265e9;">Learn more</a>
+            </p>
+            <p>Secure delivery in 2 Days, Monday</p>
+            <p><b>Available offers</b></p>
+            <ul>
+                <li>Bank Offer 5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter T&C</li>
+                <li>Bank Offer 5% cashback on Axis Bank Flipkart Debit Card up to ₹750 T&C</li>
+                <li>Bank Offer10% off up to ₹1,250 on Axis Bank Credit Card Txns, Min Txn Value: ₹4,990T&C</li>
+                <li>Special PriceGet extra 62% off (price inclusive of cashback/coupon)T&C</li>
+                <li>No Cost EMI on Bajaj Finserv EMI Card on cart value above ₹2999T&C</li>
+                <li>Bank Offer10% off up to ₹1,500 on Axis Bank Credit Card EMI Txns, Min Txn Value: ₹4,990T&C</li>
+                <li>Bank Offer10% off up to ₹1,500 on Flipkart Axis Bank Credit Card EMI Txns, Min Txn Value: ₹4,990T&C
+                </li>
+                <li>Bank Offer10% off up to ₹1,250 on IDFC First Bank Credit Card Transactions. Min Txn Value: ₹4,990T&C
+                </li>
+                <li>Bank Offer10% off up to ₹1,500 on IDFC First Bank Credit Card EMI Transactions. Min Txn Value:
+                    ₹4,990T&C</li>
+                <li>Bank Offer10% off up to ₹1,250 on IDFC First Bank Debit Card Transactions. Min Txn Value: ₹4,990T&C
+                </li>
+                <li>Bank OfferExtra 50 rs offT&C</li>
+                <li>Bank OfferFlat ₹10 Instant Cashback on Paytm UPI Trxns. Min Order Value ₹500. Valid once per Paytm
+                    accountT&C</li>
+            </ul>
+          <div style="width: 400px; border: 1px solid grey; display: flex; flex-direction: column; gap: 10px; margin-top: 40px; ">
+             <div class="" style="display: flex; gap: 20px; align-items: center; padding: 10px 20px; ">
+                <input type="radio" name="buy" value="html"> 
+                <div style="display: flex; justify-content: space-between; flex: 1;">
+                    <span>Buy without Exchange</span> <span>₹1,499</span>
+                </div>
+             </div>
+            <div style="display: flex; align-items: center; gap: 20px; border-top: 1px solid grey; padding: 10px 20px;">
+                 <input type="radio" value="js" name="buy"  >
+                 <div style="display: flex; flex: 1; justify-content: space-between;">
+                     <span>Buy with Exchange</span> <span>up to ₹300 off</span>
+                 </div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; margin-top: 20px;">
+            <div style=" width: 80px;"><img src="https://rukminim2.flixcart.com/image/160/160/prod-fk-cms-brand-images/350dc55708718c1722e50e4b201912eb23cfa14e11d52b82cccca005ba19c5f9.jpg?q=90" alt="" style="width: 60px; height: 30px;"></div>
+            <p>1 Year Limited warranty <a href="" style="color: #1265e9;">Know More</a></p>
+
+          </div>
+         <div style="display: flex; "> <p style="padding-right: 30px; margin: 0;">Delivery</p> <input type="text" placeholder="Enter Delivery Pincode" style="border: none; outline: none; border-bottom: 2px solid #1265e9; padding: 0; width: 300px; padding-bottom: 10px; padding-left: 10px; "><p style="margin: 0;"><a href="" style="color: #1265e9;">Check</a></p></div>
+          <p style="margin-left: 100px;"><b>Delivery by 16th Jul, Wednesday</b> <br> <a href="" style="color: #1265e9">View Detail</a></p>
+         
+          <div style="display: flex; gap: 50px;"><p>Strap Color</p>
+          <div>
+             <div style="display: flex; gap: 10px; margin-top: 15px;">
+             <div><img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+            <div> <img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+            <div> <img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+            <div> <img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+           </div>
+           <div style="display: flex; gap: 10px;">
+            <div><img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+            <div><img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+            <div><img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+            <div><img src="https://rukminim2.flixcart.com/image/52/52/xif0q/smartwatch/b/w/d/-original-imagvpakhztqw58x.jpeg?q=50" alt=""></div>
+           </div>
+          </div>
+        
+        
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+            <p>Highlights</p>
+            <ul>
+                <li>Single Sync BT Calling: Effortlessly connect and manage Bluetooth calls with single-sync technology</li>
+                <li>Working Crown: Intuitive control with a working crown for easy navigation</li>
+                <li>100+ Sports Modes & Watchfaces: Track over 100 sports activities and personalize your watch with a wide range of watch faces</li>
+                <li>Up to 5 Days Battery Life: Enjoy long-lasting battery performance with up to 5 days of usage on a single charge</li>
+                <li>All-Round Health Tracking: Comprehensive health monitoring, including heart rate, sleep, and stress tracking,IP68 Water,Dust Resistant</li>
+                <li>With Call Function</li>
+                <li>Touchscreen</li>
+                <li>Fitness & Outdoor</li>
+            </ul>
+        </div>
+        <div style="display: flex; gap:50px ;">
+            <p>Seller</p>
+            <div style="margin-top: 12px;"><div style="display: flex; align-items: center; gap: 10px; margin-left: 20px;"> <a href="" style="text-decoration: none; color: #1265e9;">RetailNet</a> <div style="width: 50px; height: 30px; background-color: #2874F0; color: white; display: flex; align-items: center; justify-content: center; border-radius: 25px;"> 4.2 <i class="fa-solid fa-star" style="color: white; font-size: 13px; padding: 2px;"></i> </div>
+           
+            </div>
+             <ul>
+                <li>7 Days Replacement Policy</li>
+                <li>GST invoice available</li>
+                <p><a href="" style="text-decoration: none; color: #1265e9;">See other sellers</a></p>
+            </ul>
+ </div>
+        </div>
+        <div>
+            <p><b>Protect your product</b></p>
+           <div style="display: flex; gap: 100px;">
+             <div style="display: flex;"><p><input type="checkbox"> </p>
+            <img src="https://rukminim2.flixcart.com/image/120/40/kzhbfrk0/extended-warranty-new/c/m/x/-original-imagbhk3gz8zjzzf.jpeg?q=70" alt="" style="margin: 40px 0px; width: 160px; height: 50px;">
+      </div>
+     <div>
+         <p><b>Extended Warranty for Smartwatches(1 year)</b></p>
+      <p>Get Full Warranty Coverage and protection against damages. Add Extended Warranty to make your smartmatch work longer <a href="" style="text-decoration: none; color: #1265e9;">Know More</a></p>
+       <p style="color: #757070;">Tip: Extended Warranty for Smartwatch.</p> 
+         <div style="display: flex; gap: 20px; align-items: center;">
+                <p>
+                    <b style="font-size: 20px; color: black;">₹69</b>
+                </p>
+                <p style="color: #757070; text-decoration:line-through;">₹139</p>
+                <p style="color: #1265e9;">50% Off</p>
+            </div>
+     </div>    
+           </div>
+            <div style="display: flex; gap: 100px;">
+             <div style="display: flex;"><p><input type="checkbox"> </p>
+            <img src="https://rukminim2.flixcart.com/image/312/312/kex5ci80/digital-combo/a/h/z/1-online-transaction-frauds-on-all-bank-accounts-credit-debit-original-imafvg2rkfrqhpzr.jpeg?q=70" alt="" style="margin: 40px 0px; width: 160px; height: 50px;">
+      </div>
+     <div>
+         <p><b>Digital Suraksha for Rs 50,000 by Bajaj Allianz</b></p>
+      <p>Get your financial losses covered for online transaction frauds on all bank accounts, credit/ debit cards, mobile wallets. Covers scam calls, OTP SMS frauds, UPI, netbanking, Cyber Attacks, Sim-swapping, Phishing, Spoofing, and more.
+ <a href="" style="text-decoration: none; color: #1265e9;">Know More</a></p>
+       <p style="color: #757070;">Enjoy peace of mind against all kinds of Cyber Fraud!</p> 
+         <div style="display: flex; gap: 20px; align-items: center;">
+                <p>
+                    <b style="font-size: 20px; color: black;">₹183 </b>
+                </p>
+               
+     </div>   
+           </div>
+
+        </div>
+      
+
+         </div> 
+              
+        </div>
+    </div>
+
+</body>
+
+</html>
