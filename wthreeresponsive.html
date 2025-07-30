@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    
+
+      @media screen and (max-width: 768px){
+          body {
+          width: fit-content; 
+      }
+        nav {
+          background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+         
+        }
+        nav div {
+          display: flex;
+        }
+        .navbar-button{
+          display: none;
+        }
+        .search-bar{
+          display: none;
+        }
+        nav div > a {
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          padding: 10px 10px;
+          cursor: pointer;
+        }
+        nav div > a:hover {
+          background-color: #ccc;
+          color: black;
+        }
+        nav div > button {
+          padding: 10px 10px;
+          appearance: none;
+          background: none;
+          border: none;
+          color: white;
+          font-size: 16px;
+        }
+        nav div > button:hover {
+          background-color: #ccc;
+          color: black;
+        }
+        nav button {
+          padding: 10px 10px;
+          appearance: none;
+          background: none;
+          border: none;
+          color: white;
+          font-size: 16px;
+        }
+        nav button:hover {
+          background-color: red;
+          color: black;
+        }
+        .hero-img{
+           margin-top: 38.4px;
+        }
+         .hero-img {
+           width: 100%;
+           
+         }
+
+        .hero-img img {
+            width: 100%;
+          object-fit: cover;
+         
+        }
+        .after-hero-img{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .after-hero-img p:first-child{
+            font-size: 25px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+         .after-hero-img p:nth-child(2){
+            color: rgb(156, 151, 151);
+            font-size: 18px;
+            margin-top: 10px;
+
+         }
+          .after-hero-img p:nth-child(3){
+            width: calc(100vw - 60px);
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: justify;
+          }
+          .main-cameraman-person-img-con{
+            margin-top: 40px;
+            margin-bottom: 40px;
+          }
+         
+           .cameraman-person-img{
+            margin-top: 20px;
+           }
+          .cameraman-person-img p:first-child{
+            font-size: 18px;
+            text-transform: capitalize;
+            letter-spacing: normal;
+          }
+          .main-after-cameraman-img{
+            background-color: black;
+            text-align: center;
+            padding-bottom: 50px;
+          }
+          .after-cameraman-img p:first-child{
+            font-size: 30px;
+            color: white;
+            letter-spacing: 5px;
+            font-weight: 500;
+            padding-top: 50px;
+          }
+           .after-cameraman-img p:nth-child(2){
+            font-size: 18px;
+            color: rgb(166, 160, 160);
+            margin-top: 10px;
+
+           }
+            .box {
+            width: 400px;
+            margin: 15px auto;
+            background-color: white;
+            text-align: justify;
+            }
+
+        .septem {
+            padding: 15px 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #938c8c;
+            color: #5d5b5b;
+        }
+
+        .sept {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: none;
+            padding: 15px 15px;
+            font-size: 18px;
+            color: #5d5b5b;
+        }
+
+        .sold {
+            display: inline-block;
+            background: red;
+            color: white;
+            margin-left: 10px;
+            padding: 5px 10px;
+        }
+
+        .three {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: white;
+            background-color: black;
+            display: block;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+        .img-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+           
+
+
+        }
+
+        .first-img {
+            background-color: white;
+            width: 90%;
+            padding-bottom: 20px;
+
+        }
+
+        .Second-img {
+            background-color: white;
+            width: 90%;
+            padding-bottom: 20px;
+        }
+
+        .third-img {
+            background-color: white;
+            width:90%;
+            padding-bottom: 20px;
+        }
+
+        .first {
+            width: 100%
+        }
+
+        .Second {
+            width: 100%;
+        }
+
+        .third {
+            width: 100%;
+            padding: 0;
+        }
+
+        .third-3 {
+            padding: 10px 20px;
+            text-align: justify;
+        }
+
+        .san {
+          margin-top: 10px;
+          font-size: 15px;
+          font-family: "Lato", sans-serif;
+        }
+
+        .sun {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #bcb6b6;
+        }
+
+        .pra {
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .ticket {
+          margin-top: 10px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            outline: none;
+            cursor: pointer;
+            appearance: none;
+            border: none;
+
+        }
+
+        .ticket:hover {
+            color: black;
+            background-color: #bcb6b6;
+        }
+        .contact{
+          padding-left: 20px;
+        }
+        .contact p:first-child {
+          padding-top: 20px;
+          font-size: 25px;
+          text-align: center;
+          font-weight: 500;
+          letter-spacing: 5px;
+
+        }
+         .contact p:nth-child(2){
+          text-align: center;
+          color: #5d5b5b;
+          font-size: 18px;
+          margin-top: 5px;
+         }
+         .contact p:nth-child(3){
+          margin-top: 30px;
+          margin-bottom: 10px;
+         }
+          .contact p:nth-child(4){
+             margin-bottom: 10px;
+
+          }
+         .input{
+          width: calc(100% - 20px);
+          margin: 20px auto;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+         }
+         .input [type="text"] ,  [type="email"]{
+          width: 100% ;
+          border: 1px solid gray;
+          padding: 10px 20px;
+         }
+         .input  div{
+          width: 100%;
+         display: flex;
+         justify-content: end;
+         align-items: end;
+         }
+         .input div button {
+          appearance: none;
+          border: none;
+          background-color: black;
+          padding: 10px 20px;
+          color: white;
+         }
+           .map{
+            width: 100%;
+            margin-top: 100px;
+         }
+         .social{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 80px;
+         }
+         .social a {
+            color: rgb(142, 136, 136);
+           padding: 0;
+           font-size: 30px;
+
+         }
+         .last {
+            width: 100%;
+            height: 100px;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -20px;
+            font-size: 20px;
+         }
+         
+      }
+            @media screen and (min-width: 768px){
+              body{ 
+                width: -webkit-fill-available;
+              }
+
+        nav {
+          background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+         
+        }
+        nav div {
+          display: flex;
+        }
+
+       .fa-bars{
+        display: none;
+       }
+         .navbar-button{
+          display: block;
+        }
+        .search-bar{
+          display: block;
+        }
+        nav div > a {
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          padding: 10px 10px;
+          cursor: pointer;
+        }
+        nav div > a:hover {
+          background-color: #ccc;
+          color: black;
+        }
+        nav div > button {
+          padding: 10px 10px;
+          appearance: none;
+          background: none;
+          border: none;
+          color: white;
+          font-size: 16px;
+        }
+        nav div > button:hover {
+          background-color: #ccc;
+          color: black;
+        }
+        nav button {
+          padding: 10px 10px;
+          appearance: none;
+          background: none;
+          border: none;
+          color: white;
+          font-size: 16px;
+        }
+        nav button:hover {
+          background-color: red;
+          color: black;
+        }
+        .hero-img{
+           margin-top: 38.4px;
+        }
+         .hero-img {
+           width: 100%;
+           
+         }
+
+        .hero-img img {
+            width: 100%;
+          object-fit: cover;
+         
+        }
+        .after-hero-img{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .after-hero-img p:first-child{
+            font-size: 25px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+         .after-hero-img p:nth-child(2){
+            color: rgb(156, 151, 151);
+            font-size: 18px;
+            margin-top: 10px;
+
+         }
+          .after-hero-img p:nth-child(3){
+            width: calc(100vw - 200px);
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: justify;
+            display: flex;
+            justify-content: center;
+          }
+          .main-cameraman-person-img-con{
+           width: 80%;
+           margin: 0 auto;
+           margin-bottom: 40px;
+           display: flex;
+          justify-content: space-evenly; 
+          }
+         
+           .cameraman-person-img{
+            margin-top: 20px;
+           
+           }
+          .cameraman-person-img p:first-child{
+            font-size: 18px;
+            text-transform: capitalize;
+            letter-spacing: normal;
+          }
+           .cameraman-person-img img{
+            width: 147px;
+            aspect-ratio: 1/1;
+           }
+          .main-after-cameraman-img{
+            background-color: black;
+            text-align: center;
+            padding-bottom: 50px;
+          }
+          .after-cameraman-img p:first-child{
+            font-size: 30px;
+            color: white;
+            letter-spacing: 5px;
+            font-weight: 500;
+            padding-top: 50px;
+          }
+           .after-cameraman-img p:nth-child(2){
+            font-size: 18px;
+            color: rgb(166, 160, 160);
+            margin-top: 10px;
+
+           }
+            .box {
+            width: 90%;
+            margin: 15px auto;
+            background-color: white;
+            text-align: justify;
+            }
+
+        .septem {
+            padding: 15px 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #938c8c;
+            color: #5d5b5b;
+        }
+
+        .sept {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: none;
+            padding: 15px 15px;
+            font-size: 18px;
+            color: #5d5b5b;
+        }
+
+        .sold {
+            display: inline-block;
+            background: red;
+            color: white;
+            margin-left: 10px;
+            padding: 5px 10px;
+        }
+
+        .three {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: white;
+            background-color: black;
+            display: block;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+        .img-3 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+        .first-img {
+            background-color: white;
+            padding-bottom: 20px;
+          
+        }
+
+        .Second-img {
+            background-color: white;
+            padding-bottom: 20px;
+        }
+
+        .third-img {
+            background-color: white;
+            padding-bottom: 20px;
+        }
+        .first , .Second , .third{
+          width: 100%;
+        }
+
+       
+
+        .third-3 {
+            padding: 10px 20px;
+            text-align: justify;
+        }
+
+        .san {
+          margin-top: 10px;
+          font-size: 15px;
+          font-family: "Lato", sans-serif;
+        }
+
+        .sun {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #bcb6b6;
+        }
+
+        .pra {
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .ticket {
+          margin-top: 10px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            outline: none;
+            cursor: pointer;
+            appearance: none;
+            border: none;
+
+        }
+
+        .ticket:hover {
+            color: black;
+            background-color: #bcb6b6;
+        }
+        .contact{
+          padding-left: 20px;
+        }
+        .contact p:first-child {
+          padding-top: 20px;
+          font-size: 25px;
+          text-align: center;
+          font-weight: 500;
+          letter-spacing: 5px;
+
+        }
+         .contact p:nth-child(2){
+          text-align: center;
+          color: #5d5b5b;
+          font-size: 18px;
+          margin-top: 5px;
+         }
+         .contact p:nth-child(3){
+          margin-top: 30px;
+          margin-bottom: 10px;
+         }
+          .contact p:nth-child(4){
+             margin-bottom: 10px;
+
+          }
+         .input{
+          width: calc(100% - 20px);
+          margin: 20px auto;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+         }
+         .input [type="text"] ,  [type="email"]{
+          width: 100% ;
+          border: 1px solid gray;
+          padding: 10px 20px;
+         }
+         .input  div{
+          width: 100%;
+         display: flex;
+         justify-content: end;
+         align-items: end;
+         }
+         .input div button {
+          appearance: none;
+          border: none;
+          background-color: black;
+          padding: 10px 20px;
+          color: white;
+         }
+           .map{
+            width: 100%;
+            margin-top: 100px;
+         }
+         .social{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 80px;
+         }
+         .social a {
+            color: rgb(142, 136, 136);
+           padding: 0;
+           font-size: 30px;
+
+         }
+         .last {
+            width: 100%;
+            height: 100px;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -20px;
+            font-size: 20px;
+         }
+         
+      }
+          
+        /* header {
+                  background: #000;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+             }
+              header nav {
+                 width: 100%;
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+              }
+              nav a  {
+                 display: inline-block;
+                 padding: 10px;
+                 text-decoration: none;
+                 color: white;
+                 cursor: pointer;
+                 transition: all 0.3s ease-in-out;
+              }
+              nav a:hover {
+                 background: red;
+                 
+              } */
+      
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="">HOME</a>
+       <div class="navbar-button">
+           <a href="">BAND</a>
+          <a href="">TOUR</a>
+          <a href="">CONTACT</a>
+          <button>
+            MORE
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </button>
+       </div>
+        </div>
+         <button><i class="fa-solid fa-bars"></i></button>
+        <button class="search-bar">
+        <i class="fa fa-search"></i></button>
+       
+      </nav>
+    </header>
+    <div class="hero-img">
+      <img src="https://www.w3schools.com/w3images/chicago.jpg" alt="" />
+    </div>
+    <div class="after-hero-img">
+      <p>The Band</p>
+      <p><i>We love music</i></p>
+      <p>
+        We have created a fictional band website. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    <div class="main-cameraman-person-img-con">
+         <div class="cameraman-person-img">
+         <p>Name</p>
+      <p><img src="https://www.w3schools.com/w3images/bandmember.jpg" alt=""></p>
+     </div>
+      <div class="cameraman-person-img">
+         <p>Name</p>
+      <p><img src="https://www.w3schools.com/w3images/bandmember.jpg" alt=""></p>
+     </div>
+      <div class="cameraman-person-img">
+         <p>Name</p>
+      <p><img src="https://www.w3schools.com/w3images/bandmember.jpg" alt=""></p>
+     </div>
+    </div>
+    </div>
+    <div class="main-after-cameraman-img">
+       <div class="after-cameraman-img">
+         <p>TOUR DATES</p>
+        <p><i>Remember to book your tickets!</i></p>
+       </div>
+          <div class="box">
+            <p class="septem">September <span class="sold">Sold out</span></p>
+            <p class="septem">October <span class="sold">Sold out</span></p>
+            <p class="sept">November <span class="three">3</span></p>
+        </div>
+          <div class="img-3">
+            <div class="first-img"><img class="first" src="/first-img.png" alt="">
+                <div class="third-3">
+                    <p class="san"> <b>New York </b> </p> <br>
+                    <p class="sun">Fri 27 Nov 2016</p> <br>
+                    <p class="pra">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> <button
+                        class="ticket">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="Second-img"><img class="Second" src="/second-img.png" alt="">
+                <div class="third-3">
+                    <p class="san"><b>Paris</b> </p> <br>
+                    <p class="sun">Sat 28 Nov 2016</p> <br>
+                    <p class="pra">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><button
+                        class="ticket">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="third-img"><img class="third" src="/third-img.png" alt="">
+                <div class="third-3">
+                    <p class="san"> <b>San Francisco </b> </p> <br>
+                    <p class="sun">Sun 29 Nov 2016</p> <br>
+                    <p class="pra">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> <button
+                        class="ticket">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="contact">
+      <p>CONTACT</p>
+      <p><i>Fan? drop a note!</i></p>
+        
+             <p>
+                 <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                 </span>
+                 <span>
+                     Chicago, US
+                 </span>
+             </p>
+             <p>
+                 <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                 </span>
+                 <span>
+                    Phone: +00 151515
+                 </span>
+             </p>
+             <p>
+                 <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                 </span>
+                 <span>
+                    Email: mail@mail.com
+                 </span>
+             </p>
+          <form action="" >
+              <div class="input">
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="text" placeholder="Message" required>
+              <div><button>SEND</button></div>
+            </div>
+          </form>  
+    </div>
+    <img class="map" src="/map.png" alt="">
+<div class="social">
+    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+</div>
+<div class="last"> <p class="last-one">Powered by <a href="">w3.css </a></p></div>
+
+
+   
+  </body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         * {
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+        } 
+        body{
+            background-color: #ccc;
+        }
+
+        @media screen and ( max-width: 468px){
+            header {
+                 background-color: #ccc;
+                 padding: 20px 20px;
+                
+            }
+             nav {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+             }
+             .left-arrow{
+                appearance: none;
+                border: none;
+                background: transparent;
+                font-size: 30px;
+             }
+             .notification{
+                position: relative;
+                width: 40px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-color: white;
+                appearance: none;
+                border: none;
+                outline: none;
+                font-size: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             }
+             .notification > p{
+                position: absolute;
+                width: 10px; 
+                aspect-ratio: 1/1;
+                background-color: black;
+                border-radius: 50%;
+                top: 0px;
+                left: 30px;
+             }
+             img {
+                  width: 40px;
+                  aspect-ratio: 1/1;
+                  border-radius: 50%;
+             }
+             nav > div{
+                display: flex;
+                 flex-direction: row;
+                 align-items: center;
+                 gap: 20px;
+
+             }
+             .ladki-img{
+                position: relative;
+                appearance: none;
+                background: transparent;
+                border: none;
+             }
+             .ladki-img > p{  
+                position: absolute;
+                width: 10px; 
+                aspect-ratio: 1/1;
+                background-color: black;
+                border-radius: 50%;
+                top: 0px;
+                left: 30px;
+                box-shadow: 0 0 0 2px #fff;
+
+             }
+             .heading{
+                text-align: center;
+                margin-top: 20px;
+             }
+             .wallet-con{
+                width: calc( 100vw - 40px);
+                margin: 0 auto;
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                border-radius: 10px;
+                margin-top: 20px;
+             }
+             .wallet-con-first-col :first-child{
+                font-size: 30px;
+                font-weight: bolder;
+             }
+             .wallet-con-first-col :nth-child(2) {
+                color: rgb(181, 174, 174);
+
+             }
+             .Balance{
+               margin-top: 10px;
+             }
+           .wallet-con-second-col{
+            appearance: none;
+            border: none;
+            background-color: rgb(164, 210, 195);
+            padding: 10px 20px;
+            font-weight: 300;
+            border-radius: 5px;
+           }
+           .Ads-con{
+            width: calc( 100vw - 40px);
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+           }
+           .Ads-con-first-row{
+            display: flex;
+            justify-content: space-between;
+           }
+           .Ads-expense{
+            font-size: 25px;
+            font-weight:300;
+           }
+           .last-7-days{
+            color: rgb(180, 171, 171);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+           }
+           .fa-arrow-down{
+            font-size: 16px;
+           }
+          
+           .fa-arrow-up{
+            transform: rotate(45deg);
+            font-size: 25px;
+            font-weight: bolder;
+           }
+           .Ads-con-second-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            border-bottom: 2px solid rgb(195, 189, 189);
+            padding-bottom: 20px;
+           }
+           .Ads-con-second-row :first-child{
+            font-size: 30px;
+           }
+           .Ads-con-second-row :nth-child(2){
+            appearance: none;
+            background-color: palevioletred;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            
+           }
+           .week{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+            margin-top: 50px;
+           }
+           .week :first-child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+           }
+           .S{
+            display: inline-block;
+            width: 50px;
+            height: 35px;
+            border-radius: 10px;
+            background-color:#00B4A0;
+           }
+             .week :nth-child(2){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+
+           }
+           .M{
+            display: inline-block;
+            width: 40px;
+            height: 60px;
+            border-radius: 10px;
+            background-color:#00B4A0;
+           }
+             .week :nth-child(3){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+
+           }
+           .T{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            background-color:rgb(228, 158, 182);
+           }
+             .week :nth-child(4){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+
+           }
+           .W{
+            display: inline-block;
+            width: 45px;
+            height: 80px;
+            border-radius: 10px;
+            background-color:rgb(228, 158, 182);
+           }
+             .week :nth-child(5){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+
+           }
+           .TH{
+            display: inline-block;
+            width: 45px;
+            height: 55px;
+            border-radius: 10px;
+            background-color:#00B4A0;
+           }
+             .week :nth-child(6){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+
+           }
+           .F{
+            display: inline-block;
+            width: 45px;
+            height: 65px;
+            border-radius: 10px;
+            background-color:rgb(228, 158, 182);
+           }
+           .week :nth-child(7){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+
+           }
+           .SA{
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            border-radius: 10px;
+            background-color:#00B4A0;
+           }
+           .last-part{
+             width: calc( 100vw - 40px);
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+           }
+           .last-con{
+            display: flex;
+            justify-content: space-between;
+           }
+           .last-con > p{
+            font-size: 25px;
+           }
+           .Weekly-earning > p{
+            font-size: 25px;
+           }
+           .last-withdraw-money{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+           }
+           .last-withdraw-money :first-child{
+            font-size: 25px;
+           }
+           .last-withdraw-money :nth-child(2){
+            padding: 10px 20px;
+            background-color:aquamarine;
+            appearance: none;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-weight: 500;
+           }
+        }
+        @media screen and (min-width: 468px ) and (max-width: 768px){
+         
+
+        }
+        
+       @media screen and (min-width: 1024px) {
+
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="left-arrow">
+               <i class="fa-solid fa-arrow-left"></i>
+          </button>
+             <div>
+                <button class="notification">
+                    <p></p>
+                <i class="fa-regular fa-bell"></i>
+               </button>
+             <button class="ladki-img">
+                  <p></p>
+            <img src="/ladki img.jpg" alt="">
+             </button>
+             </div>
+         </div>
+        </nav>
+    </header>
+    <div class="heading">
+      <h2> My Account</h2>
+   </div>
+    <div class="wallet-con">
+       <div class="wallet-con-first-col">
+         <p>
+            <b>$85.50</b>
+         </p>
+        <p class="Balance">My Wallet Balance </p>
+       </div>
+        <button class="wallet-con-second-col">Add More</button>
+    </div>
+    <div class="Ads-con">
+      <div class="Ads-con-first-row">
+     <div class="Ads-expense">
+       <p>
+         <b>Ads Expense</b>
+      </p>
+     <div class="last-7-days">
+       <p>Last 7 Days </p> 
+      <i class="fa-solid fa-angle-down"></i>
+     </div>
+     
+     </div>
+      <p>
+         <i class="fa-solid fa-arrow-up"></i>
+      </p>
+      </div>
+      <div class="Ads-con-second-row">
+         <p><b>$12.85</b></p>
+         <button>Download</button>
+      </div>
+      <div class="week">
+        <div> <span class="S"> </span> S</div>
+        <div> <span class="M"> </span>M</div>
+        <div> <span class="T"> </span>T</div>
+        <div> <span class="W"> </span>W</div>
+        <div> <span class="TH"></span>T</div>
+        <div> <span class="F"> </span>F</div>
+        <div> <span class="SA"></span>S</div>
+      </div>
+    </div>
+   <div class="last-part">
+       <div class="last-con">
+     <div class="Weekly-earning">
+       <p><b>Weekly Earning</b></p>
+      <div class="last-7-days">
+       <p>Last 7 Days </p> 
+      <i class="fa-solid fa-angle-down"></i>
+     </div>
+     </div>
+       <p>
+         <i class="fa-solid fa-arrow-up"></i>
+      </p>
+    </div>
+   <div class="last-withdraw-money">
+       <p><b>$894.39</b></p>
+    <button>Withdraw</button>
+   </div>
+   </div>
+
+    
+</body>
+</html>
